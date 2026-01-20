@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    background: #111;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    background: #111;
+    color: white;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar a:hover {
+    background: #333;
+}
+
+/* CONTENT */
+.content {
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.section {
+    display: none;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+.section.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-inner {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    flex: 1;
+}
+
+.justify {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #333;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* CV */
+.cv-box {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.cv-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+}
+
+.cv-link:hover {
+    text-decoration: underline;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 700px;
+}
+
+.card .full {
+    display: none;
+}
+
+.card.open .full {
+    display: block;
+}
+
+.card.open .preview {
+    display: none;
+}
+
+.story-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+}
+
+.story-link:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* FIX CONTENT OFFSET AGAR TIDAK NABRAK NAVBAR */
+.section-inner {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* JARAK AMAN UNTUK JUDUL PERTAMA */
+.section-inner h1,
+.section-inner h2,
+.section-inner h3 {
+    margin-top: 20px;
+}

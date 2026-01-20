@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leonardo Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="menu-btn" id="menuBtn">☰</button>
+
+<div class="sidebar" id="sidebar">
+    <h2 class="logo">Portfolio</h2>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('stories')">Stories</a>
+    <a onclick="showSection('projects')">Projects</a>
+    <a onclick="showSection('contact')">Contact</a>
+</div>
+
+<div class="content">
+
+    <!-- HOME -->
+    <section id="home" class="section active">
+        <div class="section-inner">
+            <h1>Leonardo Junior Johan Solihin</h1>
+            <h3>Science • Technology • Research</h3>
+
+            <p class="justify">
+                This website is a personal portfolio created to showcase my background,
+                projects, and interests in science, technology, and research based
+                problem solving.
+            </p>
+
+            <p class="justify">
+                It reflects my academic journey, independent projects, and practical
+                experience in programming, data analysis, and applied research.
+            </p>
+        </div>
+
+        <footer class="footer">
+            Made by Leonardo | © 2026 All rights reserved.
+        </footer>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="section-inner">
+            <img src="D:\DSCF0750re (1).jpg" class="profile-img" alt="Profile Photo">
+
+            <p class="justify">
+                I am a Geophysical Engineering graduate from the Bandung Institute of Technology (ITB) with a strong foundation in programming, data science, and machine learning. My academic background combines engineering mathematics, numerical methods, and computational modeling with extensive hands on experience using Python for data analysis, simulation, and applied artificial intelligence. Through research projects and industry internships, I have worked with real world datasets, developed machine learning models, and translated complex technical problems into structured computational solutions.
+            </p>
+
+            <p class="justify">
+                Beyond technical work, I have solid experience as an Undergraduate Teaching Assistant, where I taught physics, mathematical modeling, and computational programming to university students. This role strengthened my ability to explain abstract concepts clearly, guide learners step by step, and adapt explanations to different learning speeds. As a coding teacher, I focus on building strong logical thinking, problem solving skills, and practical understanding, helping students not only write code, but also understand why the code works and how to apply it to real world problems.
+            </p>
+
+            <div class="cv-box justify">
+                <h3>Curriculum Vitae</h3>
+                <p>You can view my latest CV below.</p>
+                <p>
+                    <a href="https://drive.google.com/file/d/1TtiffXxk2-nD5lW7uwG2PcNcljztvLj4/view?usp=sharing"
+                       target="_blank"
+                       class="cv-link">
+                        View CV (Google Drive)
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Made by Leonardo | © 2026 All rights reserved.
+        </footer>
+    </section>
+
+    <!-- STORIES -->
+    <section id="stories" class="section">
+        <div class="section-inner">
+            <h2>Stories</h2>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Achievements in Geophysics</h3>
+                <p class="preview justify">
+                    My journey in geophysics includes competitions and innovation projects.
+                </p>
+                <div class="full">
+                    <p class="justify">
+                        My academic journey includes national and international achievements
+                        that strengthened my interest in data driven science.
+                    </p>
+                    <a class="story-link" target="_blank"
+                       href="https://itb.ac.id/berita/raih-berbagai-prestasi-di-bidang-geofisika-leonardo-junior-ungkap-kiat-suksesnya-pada-seg-your-signal-20/60490">
+                        Read full story →
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>AI Innovation in Mineral Exploration</h3>
+                <p class="preview justify">
+                    AI driven research recognized internationally.
+                </p>
+                <div class="full">
+                    <p class="justify">
+                        Contributed to AI based mineral exploration research
+                        recognized by the Government of India.
+                    </p>
+                    <a class="story-link" target="_blank"
+                       href="https://itb.ac.id/berita/kembangkan-inovasi-ai-di-eksplorasi-mineral-tim-itb-terima-penghargaan-dari-pemerintah-india/62038">
+                        Read full story →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Made by Leonardo | © 2026 All rights reserved.
+        </footer>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="section-inner">
+            <h2>Projects</h2>
+
+            <div class="card">
+                <h3>
+                    <a href="https://github.com/leonardojjs/Python-Discount-Calculator" target="_blank">
+                        Python Discount Calculator
+                    </a>
+                </h3>
+                <p class="justify">
+                    GUI based Python application demonstrating logic, input validation,
+                    and reusable function design.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <a href="https://github.com/leonardojjs/Hackathon_ISMC" target="_blank">
+                        ISMC Hackathon Project
+                    </a>
+                </h3>
+                <p class="justify">
+                    Data driven geoscience project developed for an international hackathon.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <a href="https://github.com/leonardojjs/Rock-Lens" target="_blank">
+                        Rock Lens
+                    </a>
+                </h3>
+                <p class="justify">
+                    Deep learning application for sedimentary rock image classification.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <a href="https://github.com/leonardojjs/Geophysical-Inversion-Course-ITB" target="_blank">
+                        Geophysical Inversion Course ITB
+                    </a>
+                </h3>
+                <p class="justify">
+                    Numerical inversion and modeling exercises for geophysical applications.
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Made by Leonardo | © 2026 All rights reserved.
+        </footer>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="section-inner contact-section">
+            <h2>Contact</h2>
+
+            <p class="justify"><strong>Email:</strong> leonardojrjs@gmail.com</p>
+            <p class="justify">
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/leonardojjs/" target="_blank">
+                    linkedin.com/in/leonardojjs
+                </a>
+            </p>
+            <p class="justify"><strong>Instagram:</strong> @leonardo.jjs</p>
+            <p class="justify"><strong>Medium:</strong> Coming soon</p>
+        </div>
+
+        <footer class="footer">
+            Made by Leonardo | © 2026 All rights reserved.
+        </footer>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
